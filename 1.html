@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jawaban No 1</title>
+</head>
+<body>
+  <h1>Jawaban No 1</h1>
+  <p id=name>Hello World</p>
+  <script>
+    function dec2bin(dec){
+      return (dec >>> 0).toString(2);
+    }
+
+    var hasil= dec2bin("23");
+    var div= document.createElement('div');
+    div.innerHTML = `
+    <div class="card">
+      <p>${hasil}</p>
+      </div>
+    `;
+    document.body.appendChild(div)
+  </script>
+</body>
+</html>
